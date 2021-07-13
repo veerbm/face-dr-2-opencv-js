@@ -1,1 +1,16 @@
-{"tfjsVersion":"1.3.1","tmVersion":"2.2.2","packageVersion":"0.8.4","packageName":"@teachablemachine/image","timeStamp":"2020-10-11T15:16:35.625Z","userMetadata":{},"modelName":"tm-my-image-model","labels":["VEER","AYUSH","AMAN"]}
+{
+    "tfjsVersion": "1.3.1",
+    "tmVersion": "2.4.1",
+    "packageVersion": "0.8.4-alpha",
+    "packageName": "@teachablemachine/image",
+    "timeStamp": "2021-07-12T07:26:14.595Z",
+    "userMetadata": {},
+    "modelName": "tm-my-image-model",
+    "labels": [
+        "Veer",
+        "Harin",
+        "Elon Musk",
+        "Jeff Bezos"
+    ],
+    "imageSize": 224
+}
