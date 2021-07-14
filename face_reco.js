@@ -17,7 +17,7 @@ function openCvReady() {
 
         //saving the URL of the hosted model to modelURL
         // if link is not active, use the saved model from `model` directory
-        let modelURL = 'https://teachablemachine.withgoogle.com/models/VQtuiQIWQ/';
+        let modelURL = 'https://teachablemachine.withgoogle.com/models/mjSLnVYdW/';
         //src and dst hold the source and destination image matrix
         let src = new cv.Mat(video.height, video.width, cv.CV_8UC4);
         let dst = new cv.Mat(video.height, video.width, cv.CV_8UC1);
@@ -49,12 +49,11 @@ function openCvReady() {
             console.log(model)
         })();
 
-
         // if the teachablemachine link is unavailable, uncomment the below code to use the saved model from the local directory
         // (async () => {
         //     model = await ml5.imageClassifier('model/model.json', 'model/metadata.json')
         //     console.log(model)
-        // })();
+        // }) ();
 
         // functions takes the input as the canvas element and assign the predicted value to predictions 
         async function predict(img) {
@@ -99,10 +98,14 @@ function openCvReady() {
 
                 //Making predictions by passing the canvas element to the predict function
                 predict(crop.data)
+
+                // if you are using saved model from local dir, uncomment the below line
+                // predict(video)
+
                 console.log(predictions)
 
                 //adding the text above the bounding boxes
-                cv.putText(dst, String(predictions[0].label).toUpperCase(), { x: face.x, y: face.y - 20 }, 1, 3, [255, 128, 0, 255], 4);
+                cv.putText(dst, String(predictions[0].label), { x: face.x, y: face.y - 20 }, 1, 3, [255, 128, 0, 255], 4);
             }
 
             // showing the final output

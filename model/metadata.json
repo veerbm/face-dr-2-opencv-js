@@ -3,14 +3,14 @@
     "tmVersion": "2.4.1",
     "packageVersion": "0.8.4-alpha",
     "packageName": "@teachablemachine/image",
-    "timeStamp": "2021-07-12T07:26:14.595Z",
+    "timeStamp": "2021-07-14T14:48:03.209Z",
     "userMetadata": {},
     "modelName": "tm-my-image-model",
     "labels": [
         "Veer",
         "Harin",
-        "Elon Musk",
-        "Jeff Bezos"
+        "Chadwick B",
+        "Sandra B"
     ],
     "imageSize": 224
 }
